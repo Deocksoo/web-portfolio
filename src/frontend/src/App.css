@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 .App {
   text-align: center;
 }
@@ -26,6 +28,21 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.ant-tabs-tab {
+  color: #363636 !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #064E3B !important;
+  font-weight: 500;
+}
+
+.ant-tabs-ink-bar {
+  position: absolute;
+  background: #065F46;
+  pointer-events: none;
 }
 
 @keyframes App-logo-spin {
