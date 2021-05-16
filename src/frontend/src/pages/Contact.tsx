@@ -1,6 +1,6 @@
 import {MailIcon, PhoneIcon} from '@heroicons/react/outline'
 
-export default function Contact() {
+const Contact: React.FC = () => {
     return (
         <div className="relative bg-white">
             <div className="absolute inset-0">
@@ -52,7 +52,7 @@ export default function Contact() {
                                     name="full_name"
                                     id="full_name"
                                     autoComplete="name"
-                                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-900 focus:border-green-900 border-gray-300 rounded-md"
+                                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-800 focus:border-green-800 border-gray-300 rounded-md"
                                     placeholder="Full name"
                                 />
                             </div>
@@ -65,7 +65,7 @@ export default function Contact() {
                                     name="email"
                                     type="email"
                                     autoComplete="email"
-                                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-900 focus:border-green-900 border-gray-300 rounded-md"
+                                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-800 focus:border-green-800 border-gray-300 rounded-md"
                                     placeholder="Email"
                                 />
                             </div>
@@ -78,7 +78,7 @@ export default function Contact() {
                                     name="phone"
                                     id="phone"
                                     autoComplete="tel"
-                                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-900 focus:border-green-900 border-gray-300 rounded-md"
+                                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-800 focus:border-green-800 border-gray-300 rounded-md"
                                     placeholder="Phone (optional)"
                                 />
                             </div>
@@ -90,7 +90,7 @@ export default function Contact() {
                                     id="message"
                                     name="message"
                                     rows={4}
-                                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-900 focus:border-green-900 border-gray-300 rounded-md"
+                                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-green-800 focus:border-green-800 border-gray-300 rounded-md"
                                     placeholder="Message"
                                     defaultValue={''}
                                 />
@@ -110,3 +110,5 @@ export default function Contact() {
         </div>
     )
 }
+
+export default Contact;

@@ -3,9 +3,9 @@ import './App.css';
 import expensive from './expensive.png'
 import flower from './flower.png'
 import {Col, Image, Layout, Row, Tabs} from "antd";
-import Contact from "./Contact";
-import Theater from "./Theater";
-import About from "./About";
+import Contact from "./pages/Contact";
+import Theater from "./pages/Theater";
+import About from "./pages/About";
 
 const {Header, Content, Sider} = Layout;
 // const {Title} = Typography;
@@ -27,8 +27,9 @@ const Portfolio: React.FC = () => {
                         centered
                         size="large"
                         tabBarGutter={23}
+                        activeKey="About"
                     >
-                        <TabPane tab="About" key="1">
+                        <TabPane tab="About" key="About">
                             <About />
                         </TabPane>
                         <TabPane tab="CV" key="2">
