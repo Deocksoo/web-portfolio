@@ -5,6 +5,7 @@ import flower from './flower.png'
 import {Col, Image, Layout, Row, Tabs} from "antd";
 import Contact from "./Contact";
 import Theater from "./Theater";
+import About from "./About";
 
 const {Header, Content, Sider} = Layout;
 // const {Title} = Typography;
@@ -28,26 +29,29 @@ const Portfolio: React.FC = () => {
                         tabBarGutter={23}
                     >
                         <TabPane tab="About" key="1">
-                            about
+                            <About />
                         </TabPane>
-                        <TabPane tab="Theater" key="2">
+                        <TabPane tab="CV" key="2">
+                            CV
+                        </TabPane>
+                        <TabPane tab="Theater" key="3">
                             <Theater/>
                         </TabPane>
-                        <TabPane tab="Publications" key="3">
+                        <TabPane tab="Publications" key="4">
                             <Row gutter={16}>
                                 <Col span={6}>
                                     <Image height={250} width={250} src={expensive}/>
                                 </Col>
                             </Row>
                         </TabPane>
-                        <TabPane tab="Creations" key="4">
+                        <TabPane tab="Creations" key="5">
                             <Row gutter={16}>
                                 <Col span={6}>
                                     <Image height={250} width={250} src={flower}/>
                                 </Col>
                             </Row>
                         </TabPane>
-                        <TabPane tab="Contact" key="5">
+                        <TabPane tab="Contact" key="6">
                             <Contact/>
                         </TabPane>
                     </Tabs>
